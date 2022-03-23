@@ -1,0 +1,7 @@
+if [ -z $1];
+then
+       walp $(sxiv -t -a -o ~/Pictures/*)
+fi 
+nitrogen --set-scaled "$1"
+wal -i "$1"
+pywalfox update

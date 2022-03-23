@@ -1,0 +1,5 @@
+#!/bin/bash
+ran=$(find ~/Pictures -type f \( -iname \*.jpg -o -iname \*.png \) | shuf -n 1)
+nitrogen --set-scaled "$ran"
+wal -i "$ran"
+pywalfox update
