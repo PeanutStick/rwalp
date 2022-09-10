@@ -1,6 +1,6 @@
 if [ -z $1];
 then
-       walp $(sxiv -t -a -o ~/Pictures/*)
+       walp $(sxiv -t -a -o ~/Wallpaper/*)
 fi 
 nitrogen --set-scaled "$1"
 wal -i "$1"
