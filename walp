@@ -1,7 +1,7 @@
 if [ -z $1];
 then
-       walp $(sxiv -t -a -o ~/Wallpaper/*)
+	walp $(sxiv -t -a -o $(ls -tr ~/Wallpaper/*))
 fi 
-nitrogen --set-scaled "$1"
+feh --bg-scale "$1"
 wal -i "$1"
 pywalfox update
